@@ -1,0 +1,316 @@
+                    <!DOCTYPE html>
+                    <html lang="en">
+                    <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>GARDAS AJAY PORTFOLIO</title>
+
+                    <header>
+                        <h2 class="logo">GARDAS AJAY</h2>
+                        <nav>
+                            <a href="#about">ABOUT</a>
+                            <a href="#skills">SKILLS</a>
+                            <a href="#projects">PROJECTS</a>
+                            <a href="#certificates">CERTIFICATES</a>
+                            <a href="#experience">EXPERIENCE</a>
+                            <a href="#education">EDUCATION</a>
+                            <a href="#contact">CONTACT</a>
+                        </nav>
+                    </header>
+
+
+                    <section id="about">
+                        <img src="ajay1.jpg" class="profile-img">
+
+                        <h1>About Me</h1>
+                        <p class="tagline">B.Tech Student | Python, JavaScript & Web Development Learner</p>
+
+                        <p>I’m Gardas Ajay, a B.Tech CSE 2nd-year student passionate about turning ideas into working code. I enjoy exploring Python, C, and problem-solving to strengthen my foundation in programming. My current focus is learning web development and data structures to move closer to becoming a full-stack developer. I believe in learning by building</p>
+
+                        <p><b>Email:</b> ajaykumargardas@gmail.com</p>
+                        <p><b>LinkedIn:</b> <a href="https://www.linkedin.com/in/gardas-ajay-51a895346" target="_blank">Visit Profile</a></p>
+                    </section>
+
+
+                    <section id="skills">
+                        <h2>Skills</h2>
+                        <P>I have a strong basic knowledge in these skills and I am currently improving with my consistency </P>
+                        <ul class="skills-list">
+                            <li>Python</li>
+                            <li>C</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>VS Code</li>
+                        </ul>
+                    </section>
+
+
+                    <section id="projects">
+                        <h2>Projects</h2>
+                        <p> Here a couple of projects ,First one taught me how to build a foundational web page like portfolio which you are currently exploring and the second was taught what is full stack development and its basics(frontend and backend) </p>
+                        <div class="projects-container">
+                            <div class="project-card">
+                                <h3>Portfolio Website</h3>
+                                <p>A responsive personal portfolio built using HTML & CSS.</p>
+                            </div>
+                            <div class="project-card">
+                                <h3>Full Stack Development 101</h3>
+                                <p>Learning basic frontend & backend concepts.</p>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <section id="certificates">
+                        <h2>Certificates</h2>
+                        <p>I have completed multiple certifications, including Python (SkillUp from GeeksforGeeks), JavaScript (upGrad), HTML & CSS (Cursa), and Full Stack Development 101 (Simple I Learn). These courses helped me build strong foundational skills in programming and web development. The Full Stack Development 101 course provided an introduction to both front-end and back-end development, giving me a clear understanding of how full-stack applications work and strengthening my basics for practical projects.</p>
+
+                        <div class="certificate-gallery">
+                            <div class="certificate-card">
+                                <h3>Python — GeeksforGeeks</h3>
+                                <a href="python.pdf" target="_blank">View PDF</a>
+                            </div>
+                            <div class="certificate-card">
+                                <h3>JavaScript — UpGrad</h3>
+                                <a href="javascript.pdf" target="_blank">View PDF</a>
+                            </div>
+                            <div class="certificate-card">
+                                <h3>HTML & CSS — Cursa</h3>
+                                <a href="certificate.pdf" target=" _blank">View PDF</a>
+                            </div>
+                            <div class="certificate-card">
+                                <h3>Full Stack 101 — SimpleLearn</h3>
+                                <a href="Simplilearn Certificate.pdf"target="_blank">View PDF</a>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="experience">
+                        <h2>Experience</h2>
+                        <p>Fresher — I am an entry-level candidate with a strong interest in learning and growing in a real work environment. Even though I am just starting my career, I have built good foundational skills through courses and personal projects. I am eager to apply my knowledge and gain hands-on experience I may not have formal industry experience, but I have developed solid foundational skills through practical learning and certifications in Python, JavaScript, HTML & CSS, and Full Stack Development 101. I have applied these skills in small projects, such as building my personal portfolio.</p>
+                    </section>
+
+
+                    <section id="education">
+                        <h2>Education</h2>
+                        <p><b>PRIMARY&SECONDARY Education</b></p>
+                        <p>school:ZPHS Thangallapally<br>
+                        Board:ssc<br>
+                        Grade:8.5<br>
+                        year of Completion:2022</p>
+                        <p><b>INTERMEDIATE</b></p>
+                        <p>college:Govt junior college(BOYS),siricilla<br>
+                        Board:TSBIE<br>
+                        Grade:9.65</p>
+                        <p><b>B.TECH(currently Pursuing)</b></p>
+                        <p>college:MALLAREDDY COLLEGE OF ENGINEERING(MRCE)<br>
+                        Duration:2024-2028</p>
+                    </section>
+
+
+                    <section id="contact">
+                        <h2>Contact Me</h2>
+
+                        <form action="https://formspree.io/f/xjkjljzy" method="POST">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_next" value="thankyou.html">
+
+                            <input type="text" name="name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="message" placeholder="Your Message (max 200 chars)" maxlength="200" required></textarea>
+
+                            <button type="submit">Submit</button>
+                        </form>
+                    </section>
+
+
+                    <footer>
+                        <p>For further information contact my Gmail:
+                        <a href="mailto:ajaykumargardas@gmail.com">ajaykumargardas@gmail.com</a></p>
+                    </footer>
+
+                    <script>
+
+                    const secs = document.querySelectorAll("section");
+                    const observer = new IntersectionObserver((entries)=>{
+                        entries.forEach(entry=>{
+                            entry.target.classList.toggle("active", entry.isIntersecting);
+                        });
+                    },{threshold:0.3});
+                    secs.forEach(sec=>observer.observe(sec));
+                    </script>
+
+                    </body>
+                    </html>
+
+                    <style>
+
+                    * {margin:0;padding:0;box-sizing:border-box;font-family:'Arial',sans-serif;}
+                    a {text-decoration:none;color:#0ea5e9;}
+
+
+                    body {
+                        color:#f0eded;
+                        scroll-behavior:smooth;
+
+                        background: linear-gradient(135deg, rgb(26, 10, 204), #4e06d3);
+                        background-image: url(https://images.unsplash.com/photo-1510915228340-29c85a43dcfe);
+                        background-repeat: no-repeat;
+                        background-position: right bottom;
+                        background-size: cover;
+                        background-attachment: fixed;
+                    }
+
+
+                    header {
+                        position:fixed;
+                        top:0;width:100%;
+                        background:#111827;
+                        display:flex;
+                        justify-content:space-between;
+                        align-items:center;
+                        padding:15px 8%;
+                        z-index:1000;
+                        box-shadow:0 2px 8px rgba(0,0,0,0.4);
+                    }
+                    .logo {color:#0ea5e9;font-size:24px;font-weight:bold;}
+                    nav a {color:#cbd5e1;margin-left:20px;font-weight:bold;}
+                    nav a:hover {color:#0ea5e9;}
+
+
+                    section {
+                        padding:90px 10%;
+                        opacity:0;
+                        transform:translateY(50px);
+                        transition:all 0.9s ease;
+                        scroll-margin-top:80px;
+                    }
+                    section.active {
+                        opacity:1;
+                        transform:translateY(0);
+                    }
+
+                    h1,h2,h3 {color:#0ea5e9;margin-bottom:15px;}
+                    p,li {color:#f5f1f1;margin-bottom:12px;}
+
+
+                    .profile-img {
+                        width: 230px;
+                        height: 300px;
+                        object-fit: cover;
+                        border-radius: 15px;
+                        border: 4px solid #0ea5e9;
+                        display: block;
+                        margin: 20px auto;
+                        box-shadow: 0 8px 20px rgba(0,0,0,0.45);
+                    }
+
+
+                    .skills-list {
+                        list-style:none;
+                        display:flex;
+                        justify-content:center;
+                        flex-wrap:wrap;
+                        gap:15px;
+                    }
+                    .skills-list li {
+                        background:#111827;
+                        color:#fff;
+                        padding:10px 20px;
+                        border-radius:8px;
+                        font-weight:bold;
+                        transition:0.3s;
+                    }
+                    .skills-list li:hover {
+                        transform:scale(1.08);
+                        background:#0ea5e9;
+                        color:#111827;
+                    }
+
+
+                    .projects-container {
+                        display:flex;
+                        flex-wrap:wrap;
+                        gap:20px;
+                        justify-content:center;
+                    }
+                    .project-card {
+                        background:#1e293b;
+                        width:260px;
+                        padding:15px;
+                        border-radius:12px;
+                        color:white;
+                        transition:0.4s;
+                    }
+                    .project-card:hover {
+                        transform:translateY(-8px);
+                        background:#0ea5e9;
+                        color:#111827;
+                    }
+
+                    .certificate-gallery {
+                        display:flex;
+                        flex-wrap:wrap;
+                        gap:20px;
+                        justify-content:center;
+                    }
+                    .certificate-card {
+                        background:#1e293b;
+                        width:260px;
+                        padding:15px;
+                        border-radius:12px;
+                        border:2px solid #0ea5e9;
+                        text-align:center;
+                        color:white;
+                    }
+                    .certificate-card a {
+                        display:block;
+                        margin-top:10px;
+                        padding:8px;
+                        background:#0ea5e9;
+                        color:#111827;
+                        border-radius:6px;
+                        font-weight:bold;
+                    }
+                    .certificate-card a:hover {background:#38bdf8;}
+
+                    form {max-width:450px;margin:auto;}
+                    form input, form textarea {
+                        width:100%;
+                        padding:10px;
+                        margin-bottom:12px;
+                        border-radius:8px;
+                        border:2px solid #bbb;
+                    }
+                    button {
+                        width:100%;
+                        background:#0ea5e9;
+                        color:#111827;
+                        padding:12px;
+                        border:none;
+                        border-radius:6px;
+                        font-size:16px;
+                    }
+                    button:hover {background:#0284c7;}
+
+
+                    footer {
+                        background:#111827;
+                        text-align:center;
+                        padding:20px;
+                        margin-top:20px;
+                        color:#cbd5e1;
+                    }
+                    footer a {
+                        color:#0ea5e9;
+                        font-weight:bold;
+                    }
+                    footer a:hover {color:#38bdf8;}
+                    </style>
+                    </head>
+
+                    </body>
+
+
+
+
